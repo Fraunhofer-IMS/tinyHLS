@@ -33,11 +33,10 @@ jobs:
       uses: actions/actions/setup-python@v2 
       with: 
         python-version: 3.8
-        
     - name: Install dependencies
       run: |
+      # See autobencoder.com/2020-08-24-conda-actions/
         $CONDA/bin/conda env update --file environment.yml --name tinyhls
-
     - name: '⚙️ testing tinyHLS' 
       run: |
 #        echo "Creating and activating Conda environment"
