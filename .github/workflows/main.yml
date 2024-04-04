@@ -32,12 +32,9 @@ jobs:
         with:
           python-version: 3.8
 
-      - name: Install dependencies
+      - name: '⚙️Testing Tiny HLS'
         run: |
           $CONDA/bin/conda env update --file environment.yml --name tinyhls
-
-      - name: '⚙️ testing tinyHLS'
-        run: |
           conda init
           conda activate tinyHLS
           pip install .
