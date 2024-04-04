@@ -18,7 +18,7 @@ on:
 jobs:
   Check:
     runs-on: ubuntu-latest
-    name: 'AIRISC Simulation/Verification Script'
+    name: 'tiny HLS Test/Verification Script'
 
     steps:
       - name: '📂 Repository Checkout'
@@ -32,9 +32,12 @@ jobs:
         with:
           python-version: 3.8
 
-      - name: '⚙️Testing Tiny HLS'
+      - name: Install dependencies
         run: |
           $CONDA/bin/conda env update --file environment.yml --name tinyhls
+
+      - name: '⚙️ testing tinyHLS'
+        run: |
           conda init
           conda activate tinyHLS
           pip install .
