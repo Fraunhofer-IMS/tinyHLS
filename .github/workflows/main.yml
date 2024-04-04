@@ -38,9 +38,7 @@ jobs:
 
       - name: '⚙️ testing tinyHLS'
         run: |
-#          conda init
           conda activate tinyHLS
-#          pip install .
           echo "Running tinyHLS..."
           python3 test.py
           echo "...Done running tinyHLS"
