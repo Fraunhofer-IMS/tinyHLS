@@ -41,9 +41,9 @@ jobs:
         echo "Running tinyHLS..."
         python3 test.py
         echo "...Done running tinyHLS"
-      artifacts: 
-        paths: 
-            - "./output/*"
+#      artifacts: 
+#        paths: 
+#            - "./output/*"
       
     - name: '📦 Install Icarus Verilog'
       run: |
