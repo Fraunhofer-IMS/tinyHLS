@@ -1,0 +1,5 @@
+
+../output/test/tinyhls_cnn_test.v
+../output/test/tinyhls_tb_test.v
+
+

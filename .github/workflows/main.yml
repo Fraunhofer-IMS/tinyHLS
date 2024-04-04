@@ -1,0 +1,49 @@
+name: 'airisc-sim'
+
+on:
+  push:
+    branches:
+    - main
+    paths:
+    - 'src/**'
+    - 'tb/**'
+  pull_request:
+    branches:
+    - main
+    paths:
+    - 'src/**'
+    - 'tb/**'
+  workflow_dispatch:
+
+jobs:
+
+  Check:
+    runs-on: ubuntu-latest
+    name: 'AIRISC Simulation/Verification Script'
+
+    steps:
+
+    - name: '📂 Repository Checkout'
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+        submodules: recursive
+
+    - name: '📦 Install Icarus Verilog'
+      run: |
+        wget https://github.com/stnolting/icarus-verilog-prebuilt/releases/download/v1.0.0/iverilog-27082022.tar.gz
+        mkdir $GITHUB_WORKSPACE/iverilog-27082022.tmp
+        tar -xzf iverilog-27082022.tar.gz -C $GITHUB_WORKSPACE/iverilog-27082022.tmp/
+
+    - name: '⚙️ Update PATH Variable'
+      run: echo "$GITHUB_WORKSPACE/iverilog-27082022.tmp/bin" >> $GITHUB_PATH
+
+    - name: '🚀 Run Verification Script'
+      run: /bin/bash -c "chmod u+x $GITHUB_WORKSPACE/.github/check.sh && $GITHUB_WORKSPACE/.github/check.sh"
+
+    - name: '📤 Archive Simulation Log File'
+      uses: actions/upload-artifact@v3
+      with:
+        name: sim_log
+        path: .github/sim_log
+
