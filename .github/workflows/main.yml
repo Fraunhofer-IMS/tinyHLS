@@ -29,13 +29,21 @@ jobs:
         fetch-depth: 0
         submodules: recursive
 
+    - name: Set up Python 3.8
+      uses: actions/actions/setup-python@v2 
+      with: 
+        python-version: 3.8
+        
+    - name: Install dependencies
+      run: |
+        $CONDA/bin/conda env update --file environment.yml --force
 
     - name: '⚙️ testing tinyHLS' 
       run: |
-        echo "Creating and activating Conda environment"
-        source /opt/anaconda3/opt/anaconda3/bin/activate
-        conda init
-        conda env create -f environment.yml --force
+#        echo "Creating and activating Conda environment"
+#        source /opt/anaconda3/opt/anaconda3/bin/activate
+#        conda init
+#        conda env create -f environment.yml --force
         conda activate tinyHLS
         pip install .
         echo "Running tinyHLS..."
