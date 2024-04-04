@@ -1,4 +1,4 @@
-name: 'airisc-sim'
+name: 'tinyHLS-test-sim'
 
 on:
   push:
@@ -29,6 +29,22 @@ jobs:
         fetch-depth: 0
         submodules: recursive
 
+
+    - name: '⚙️ testing tinyHLS' 
+      run: |
+        echo "Creating and activating Conda environment"
+        source /opt/anaconda3/opt/anaconda3/bin/activate
+        conda init
+        conda env create -f environment.yml --force
+        conda activate tinyHLS
+        pip install .
+        echo "Running tinyHLS..."
+        python3 test.py
+        echo "...Done running tinyHLS"
+      artifacts: 
+        paths: 
+            - "./output/*"
+      
     - name: '📦 Install Icarus Verilog'
       run: |
         wget https://github.com/stnolting/icarus-verilog-prebuilt/releases/download/v1.0.0/iverilog-27082022.tar.gz
