@@ -36,7 +36,7 @@ jobs:
         
     - name: Install dependencies
       run: |
-        $CONDA/bin/conda env update --file environment.yml --force
+        $CONDA/bin/conda env update --file environment.yml --name tinyhls
 
     - name: '⚙️ testing tinyHLS' 
       run: |
