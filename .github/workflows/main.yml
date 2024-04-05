@@ -38,6 +38,8 @@ jobs:
           activate-environment: anaconda-client-env
           environment-file: environment.yml
           auto-activate-base: false
+
+      - name: 'Check environment' 
         run: |
            conda info
            conda list
