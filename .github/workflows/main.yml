@@ -39,20 +39,6 @@ jobs:
           environment-file: environment.yml
           auto-activate-base: false
 
-#      - name: 'Setup environment' 
-#        run: |
-#           conda init 
-#           source ~/.bashrc
-#           conda env create -f environment.yml
-#           source ~/.bashrc
-#           conda info --envs
-#           conda activate tinyHLS
-#           conda info
-#           conda list
-#
-#
-#          $CONDA/bin/conda env update --file environment.yml --name tinyhls
-
       - name: '⚙️ testing tinyHLS'
         run: |
           echo "Running tinyHLS..."
