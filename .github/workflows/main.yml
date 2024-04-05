@@ -42,6 +42,7 @@ jobs:
       - name: 'Check environment' 
         run: |
            conda init 
+           source ~/.bash_profile
            conda activate tinyhls
            conda info
            conda list
