@@ -56,7 +56,7 @@ jobs:
       - name: '⚙️ testing tinyHLS'
         run: |
           echo "Running tinyHLS..."
-          cona init 
+          conda init 
           source ~/.bashrc
           conda env create -f environment.yml
           source ~/.bashrc
