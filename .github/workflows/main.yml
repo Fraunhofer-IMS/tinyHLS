@@ -44,6 +44,8 @@ jobs:
            conda init 
            source ~/.bashrc
            conda env create -f environment.yml
+           source ~/.bashrc
+           conda info --envs
            conda activate tinyhls
            conda info
            conda list
