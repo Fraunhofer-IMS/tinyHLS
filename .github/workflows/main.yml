@@ -41,6 +41,7 @@ jobs:
 
       - name: 'Check environment' 
         run: |
+           conda activate tinyhls
            conda info
            conda list
 
