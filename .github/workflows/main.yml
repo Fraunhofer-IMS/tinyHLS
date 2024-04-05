@@ -43,6 +43,7 @@ jobs:
         run: |
            conda init 
            source ~/.bashrc
+           conda env create -f environment.yml
            conda activate tinyhls
            conda info
            conda list
