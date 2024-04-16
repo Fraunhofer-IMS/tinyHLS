@@ -78,8 +78,7 @@ The according simulation scripts can be found in the [`ci`](.ci) folder.
 
 ### Requirements
 
-* tensorflow==2.11.0
-* numpy==1.22.3
+Please see [`environment.yml`](environment.yml) for a detailed list of python packages. If you want to use the Icarus simulator, you can find details about the version and installation in the project's [GitHub actions workflow](https://github.com/Fraunhofer-IMS/tinyHLS/actions).
 
 
 ## Contact
