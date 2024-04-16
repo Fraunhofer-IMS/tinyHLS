@@ -75,9 +75,6 @@ The generated Verilog code can be simulated using any open-source or commercial 
 The GitHub actions workflow of this project uses Icarus Verilog as open-source simulation example.
 The according simulation scripts can be found in the [`ci`](.ci) folder.
 
-> [!NOTE]
-> A simulation environment using free AMD Vivado WebPack will be provided soon. 
-
 
 ### Requirements
 
