@@ -67,5 +67,4 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: report_and_outputs
-          path:
-          	output/*
+          path: output/*
