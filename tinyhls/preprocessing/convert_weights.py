@@ -146,20 +146,17 @@ def create_verilog_includes(source_path, destination_path, model_json, BIT_WIDTH
                 f_out = open(os.path.join(destination_path, name+'.v'), "w")
                 f_out.write("""/*
     //////////////////////////////////////////////////////////////////
-    // tinyHLS Copyright (C) 2024 FRAUNHOFER INSTITUTE OF MICROELECTRONIC CIRCUITS AND SYSTEMS (IMS), DUISBURG, GERMANY. 
+    // Copyright 2024 FRAUNHOFER INSTITUTE OF MICROELECTRONIC CIRCUITS AND SYSTEMS (IMS), DUISBURG, GERMANY.
+    // --- All rights reserved --- 
+    // SPDX-License-Identifier: Apache-2.0 WITH SHL-2.1
+    // Licensed under the Solderpad Hardware License v 2.1 (the "License");
+    // you may not use this file except in compliance with the License, or, at your option, the Apache License version 2.0.
+    // You may obtain a copy of the License at
+    // https://solderpad.org/licenses/SHL-2.1/
+    // Unless required by applicable law or agreed to in writing, any work distributed under the License is distributed on an "AS IS" BASIS,
+    // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    // See the License for the specific language governing permissions and limitations under the License.
     //
-    // This program is free software: you can redistribute it and/or modify
-    // it under the terms of the GNU General Public License as published by
-    // the Free Software Foundation, either version 3 of the License, or
-    // (at your option) any later version.
-    // 
-    // This program is distributed in the hope that it will be useful,
-    // but WITHOUT ANY WARRANTY; without even the implied warranty of
-    // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    // GNU General Public License for more details.
-    //
-    // You should have received a copy of the GNU General Public License
-    // along with this program.  If not, see <https://www.gnu.org/licenses/>.
     //   $$\     $$\                     $$\   $$\ $$\       $$$$$$\ 
     //   $$ |    \__|                    $$ |  $$ |$$ |     $$  __$$\ 
     // $$$$$$\   $$\ $$$$$$$\  $$\   $$\ $$ |  $$ |$$ |     $$ /  \__| 
@@ -201,20 +198,17 @@ def create_verilog_includes(source_path, destination_path, model_json, BIT_WIDTH
                     verilog_string = verilog_string + "assign b" + str(ctr) + "[" + str(i) + "] = " + str(BIT_WIDTH) + "'h" + hex_values[i] + ";\n"
                 f_out.write("""/*
     //////////////////////////////////////////////////////////////////
-    // tinyHLS Copyright (C) 2024 FRAUNHOFER INSTITUTE OF MICROELECTRONIC CIRCUITS AND SYSTEMS (IMS), DUISBURG, GERMANY. 
+    // Copyright 2024 FRAUNHOFER INSTITUTE OF MICROELECTRONIC CIRCUITS AND SYSTEMS (IMS), DUISBURG, GERMANY.
+    // --- All rights reserved --- 
+    // SPDX-License-Identifier: Apache-2.0 WITH SHL-2.1
+    // Licensed under the Solderpad Hardware License v 2.1 (the "License");
+    // you may not use this file except in compliance with the License, or, at your option, the Apache License version 2.0.
+    // You may obtain a copy of the License at
+    // https://solderpad.org/licenses/SHL-2.1/
+    // Unless required by applicable law or agreed to in writing, any work distributed under the License is distributed on an "AS IS" BASIS,
+    // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    // See the License for the specific language governing permissions and limitations under the License.
     //
-    // This program is free software: you can redistribute it and/or modify
-    // it under the terms of the GNU General Public License as published by
-    // the Free Software Foundation, either version 3 of the License, or
-    // (at your option) any later version.
-    // 
-    // This program is distributed in the hope that it will be useful,
-    // but WITHOUT ANY WARRANTY; without even the implied warranty of
-    // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    // GNU General Public License for more details.
-    //
-    // You should have received a copy of the GNU General Public License
-    // along with this program.  If not, see <https://www.gnu.org/licenses/>.
     //   $$\     $$\                     $$\   $$\ $$\       $$$$$$\ 
     //   $$ |    \__|                    $$ |  $$ |$$ |     $$  __$$\ 
     // $$$$$$\   $$\ $$$$$$$\  $$\   $$\ $$ |  $$ |$$ |     $$ /  \__| 
