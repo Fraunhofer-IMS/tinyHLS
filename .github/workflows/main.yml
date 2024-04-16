@@ -67,5 +67,5 @@ jobs:
         with:
           name: report_and_outputs
           path: |
-          	./.ci/sim_log
-          	./output/*
+          	/.ci/sim_log
+          	/output/*
