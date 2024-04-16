@@ -66,5 +66,5 @@ jobs:
       - name: '📤 Archive Outputs'
         uses: actions/upload-artifact@v3
         with:
-          name: report_and_outputs
+          name: outputs
           path: output/*
