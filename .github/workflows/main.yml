@@ -62,9 +62,8 @@ jobs:
       - name: '🚀 Run Verification Script'
         run: /bin/bash -c "chmod u+x $GITHUB_WORKSPACE/.github/check.sh && $GITHUB_WORKSPACE/.github/check.sh"
 
-      - name: '📤 Archive Simulation Log File'
+      - name: '📤 Archive Report'
         uses: actions/upload-artifact@v3
         with:
-          name: sim_log
-          path: .github/sim_log
-
+          name: report
+          path: output/*
