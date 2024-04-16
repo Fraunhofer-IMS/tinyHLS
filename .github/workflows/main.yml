@@ -66,6 +66,6 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: report_and_outputs
-          path: | 
-          	.ci/sim_log
-          	output/*
+          path: |
+          	./.ci/sim_log
+          	./output/*
