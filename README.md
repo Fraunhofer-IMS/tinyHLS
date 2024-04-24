@@ -81,7 +81,7 @@ The according simulation scripts can be found in the [`ci`](.ci) folder.
 Please see [`environment.yml`](environment.yml) for a detailed list of python packages. If you want to use the Icarus simulator, you can find details about the version and installation in the project's [GitHub actions workflow](https://github.com/Fraunhofer-IMS/tinyHLS/actions).
 
 ### License 
-This project is provided under the [GPL-3.0 license](LICENSE). Outputs of this project can be used under the [SHL-2.1 license](https://spdx.org/licenses/SHL-2.1.html). 
+This project is provided under the [GPL-3.0 license](LICENSE). A special exception was included, that applies particularly for the outputs of the framework. Outputs of this project can be used under the [SHL-2.1 license](output/LICENSE). 
 
 
 ## Contact
