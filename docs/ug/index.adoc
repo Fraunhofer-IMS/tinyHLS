@@ -7,17 +7,19 @@ include::../attrs.adoc[]
 :title-logo-image: tinyHLS.png[pdfwidth=6.25in,align=center]
 :favicon: img/icon.png
 
-image:tinyHLS.png[align=center,link="https://github.com/stnolting/neorv32"]
+image:tinyHLS.png[align=center,link="https://github.com/Fraunhofer-IMS/tinyHLS"]
 
 
 [.text-center]
-https://github.com/stnolting/neorv32[image:https://img.shields.io/badge/GitHub-stnolting%2Fneorv32-ffbd00?style=flat-square&logo=github&[title='homepage']]
-https://github.com/stnolting/neorv32/blob/main/LICENSE[image:https://img.shields.io/github/license/stnolting/neorv32?longCache=true&style=flat-square[title='license']]
-https://github.com/stnolting/neorv32/releases/tag/nightly[image:https://img.shields.io/badge/data%20sheet-PDF-ffbd00?longCache=true&style=flat-square&logo=asciidoctor[title='datasheet (pdf)']]
-https://github.com/stnolting/neorv32/releases/tag/nightly[image:https://img.shields.io/badge/user%20guide-PDF-ffbd00?longCache=true&style=flat-square&logo=asciidoctor[title='userguide (pdf)']]
-https://stnolting.github.io/neorv32/ug[image:https://img.shields.io/badge/-HTML-ffbd00?longCache=true&style=flat-square[title='userguide (html)']]
-https://stnolting.github.io/neorv32/sw/files.html[image:https://img.shields.io/badge/doxygen-HTML-ffbd00?longCache=true&style=flat-square&logo=Doxygen[title='doxygen']] +
-https://github.com/stnolting/neorv32/releases[image:https://img.shields.io/github/v/release/stnolting/neorv32?longCache=true&style=flat-square&logo=GitHub[title='release']]
-https://github.com/stnolting/neorv32/releases[image:https://img.shields.io/github/commits-since/stnolting/neorv32/latest?longCache=true&style=flat-square&logo=GitHub[title='release-commits']]
+https://www.ims.fraunhofer.de/en.html[image:https://img.shields.io/badge/Fraunhofer-IMS-179c7d.svg?longCache=true&style=flat-square&logo=fraunhofergesellschaft&logoColor=179c7d[title='homepage']]
+https://github.com/Fraunhofer-IMS/tinyHLS[image:https://img.shields.io/github/actions/workflow/status/Fraunhofer-IMS/tinyHLS/main.yml?branch=main&longCache=true&style=flat-square&label=tinyHLS-check&logo=Github%20Actions&logoColor=fff[title='repo']]
+https://github.com/Fraunhofer-IMS/tinyHLS/blob/main/LICENSE[image:https://img.shields.io/github/license/Fraunhofer-IMS/tinyHLS?longCache=true&style=flat-square[title='license']]
+https://github.com/Fraunhofer-IMS/tinyHLS/blob/main/docs/public/pdf/tinyHLS.pdf[image:https://img.shields.io/badge/user%20guide-PDF-ffbd00?longCache=true&style=flat-square&logo=asciidoctor[title='userguide (pdf)']]
+https://github.com/Fraunhofer-IMS/tinyHLS/tree/main/docs/ug[image:https://img.shields.io/badge/-HTML-ffbd00?longCache=true&style=flat-square[title='userguide (html)']]
+
+////
+https://github.com/Fraunhofer-IMS/tinyHLS/releases[image:https://img.shields.io/github/v/release/stnolting/neorv32?longCache=true&style=flat-square&logo=GitHub[title='release']]
+https://github.com/Fraunhofer-IMS/tinyHLS/releases[image:https://img.shields.io/github/commits-since/stnolting/neorv32/latest?longCache=true&style=flat-square&logo=GitHub[title='release-commits']]
+////
 
 include::content.adoc[]
