@@ -1,0 +1,30 @@
+<<<
+:sectnums:
+== Legal
+
+// ####################################################################################################################
+:sectnums!:
+=== Contact
+
+==========================
+**tinyHLS** +
+Fraunhofer IMS +
+Duisburg, Germany +
+tinyhls@ims.fraunhofer.de
+==========================
+
+// ####################################################################################################################
+:sectnums!:
+=== Acquisition
+
+==========================
+**tinyHLS** +
+https://github.com/Fraunhofer-IMS/tinyHLS
+==========================
+
+
+// ####################################################################################################################
+:sectnums!:
+=== License
+
+This project is provided under the https://github.com/Fraunhofer-IMS/tinyHLS/LICENSE[GPL-3.0 license]. A special exception was included, that applies particularly for the outputs of the framework. Outputs of this project can be used under the https://github.com/Fraunhofer-IMS/tinyHLS/output/LICENSE[SHL-2.1 license].

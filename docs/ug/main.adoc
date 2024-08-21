@@ -1,0 +1,16 @@
+= tinyHLS userguide
+include::../attrs.adoc[]
+include::../attrs.main.adoc[]
+
+
+<<<
+// ####################################################################################################################
+.**Documentation**
+[TIP]
+The online documentation of the project (a.k.a. the **user guide**) is available on GitHub-pages: https://github.com/Fraunhofer-IMS/tinyHLS 
+
+<<<
+// ####################################################################################################################
+toc::[]
+
+include::content.adoc[]
