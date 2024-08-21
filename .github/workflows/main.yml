@@ -102,5 +102,5 @@ jobs:
         with: 
           name: documentation
           path: |
-            docs/public/pdf/tinyHLS
+            docs/public/pdf/tinyHLS.pdf
             docs/public/index.html
