@@ -111,4 +111,4 @@ jobs:
       - name: '🚀 Deploy to GitHub-Pages'
         run: |
           chmod +x ./docs/do.py
-          ./docs/do.py DeployToGitHubPages "update ${{ github.sha }}"-
+          ./docs/do.py DeployToGitHubPages "update ${{ github.sha }}"
