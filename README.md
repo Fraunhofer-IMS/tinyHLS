@@ -81,7 +81,20 @@ The according simulation scripts can be found in the [`ci`](.ci) folder.
 Please see [`environment.yml`](environment.yml) for a detailed list of python packages. If you want to use the Icarus simulator, you can find details about the version and installation in the project's [GitHub actions workflow](https://github.com/Fraunhofer-IMS/tinyHLS/actions).
 
 ### License 
-This project is provided under the [GPL-3.0 license](LICENSE). A special exception was included, that applies particularly for the outputs of the framework. Outputs of this project can be used under the [SHL-2.1 license](output/LICENSE). 
+This project is provided under the [GPL-3.0 license](LICENSE). A special exception was included, that applies particularly for the outputs of the framework. The exception is: 
+
+```
+As a special exception, you may create a larger work that contains
+part or all of the tinyHLS hardware compiler and distribute that 
+work under the terms of your choice, so long as that work is not 
+itself a hardware compiler or template-based code generator or a 
+modified version thereof. Alternatively, if you modify or re-
+distribute the hardware compiler itself, you may (at your option) 
+remove this special exception, which will cause the hardware compi-
+ler and the resulting output files to be licensed under the GNU 
+General Public License without this special exception.
+
+```
 
 
 ## Contact

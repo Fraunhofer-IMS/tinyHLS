@@ -1,14 +1,28 @@
 //////////////////////////////////////////////////////////////////
-// Copyright 2024 FRAUNHOFER INSTITUTE OF MICROELECTRONIC CIRCUITS AND SYSTEMS (IMS), DUISBURG, GERMANY.
-// --- All rights reserved --- 
-// SPDX-License-Identifier: Apache-2.0 WITH SHL-2.1
-// Licensed under the Solderpad Hardware License v 2.1 (the "License");
-// you may not use this file except in compliance with the License, or, at your option, the Apache License version 2.0.
-// You may obtain a copy of the License at
-// https://solderpad.org/licenses/SHL-2.1/
-// Unless required by applicable law or agreed to in writing, any work distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and limitations under the License.
+// tinyHLS Copyright (C) 2024 FRAUNHOFER INSTITUTE OF MICROELECTRONIC CIRCUITS AND SYSTEMS (IMS), DUISBURG, GERMANY. 
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+// 
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+//
+// As a special exception, you may create a larger work that contains
+// part or all of the tinyHLS hardware compiler and distribute that 
+// work under the terms of your choice, so long as that work is not 
+// itself a hardware compiler or template-based code generator or a 
+// modified version thereof. Alternatively, if you modify or re-
+// distribute the hardware compiler itself, you may (at your option) 
+// remove this special exception, which will cause the hardware compi-
+// ler and the resulting output files to be licensed under the GNU 
+// General Public License without this special exception.
 //
 //   $$\     $$\                     $$\   $$\ $$\       $$$$$$\
 //   $$ |    \__|                    $$ |  $$ |$$ |     $$  __$$\

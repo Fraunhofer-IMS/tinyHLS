@@ -14,15 +14,15 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #
-# As a special exception, you may create a larger work that contains part 
-# or all of the tinyHLS hardware compiler and distribute that work under 
-# the terms of the Solderpad Hardware License v2.1 (SHL-2.1), so long as 
-# that work is not itself a hardware compiler or template-based code generator 
-# or a modified version thereof. Alternatively, if you modify or redistribute 
-# the hardware compiler itself, you may (at your option) remove this special 
-# exception, which will cause the hardware compiler and the resulting output 
-# files to be licensed under the GNU General Public License without this 
-# special exception. 
+# As a special exception, you may create a larger work that contains
+# part or all of the tinyHLS hardware compiler and distribute that 
+# work under the terms of your choice, so long as that work is not 
+# itself a hardware compiler or template-based code generator or a 
+# modified version thereof. Alternatively, if you modify or re-
+# distribute the hardware compiler itself, you may (at your option) 
+# remove this special exception, which will cause the hardware compi-
+# ler and the resulting output files to be licensed under the GNU 
+# General Public License without this special exception.
 #
 #   $$\     $$\                     $$\   $$\ $$\       $$$$$$\
 #   $$ |    \__|                    $$ |  $$ |$$ |     $$  __$$\

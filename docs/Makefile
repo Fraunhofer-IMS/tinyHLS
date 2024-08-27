@@ -1,8 +1,9 @@
 .DEFAULT_GOAL := help
 
-all: pdf html ug-pdf ug-html
-	mkdir -p public/img/
-	cp -vr figures/* public/img/
+all: pdf html
+
+#	mkdir -p public/img/
+#	cp -vr figures/* public/img/
 
 # Generate PDF userguide
 # removed for now. 	  -r asciidoctor-diagram
