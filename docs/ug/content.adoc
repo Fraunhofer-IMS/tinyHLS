@@ -9,7 +9,7 @@ Notice it's attached to the preceding list item.
 
 *Toolbox Description*
 
-*tinyHLS* is a compact hardware compiler developed by Fraunhofer IMS, which is an useful toolbox for embedded systems engineers and data scientists responsible for developing and deploying edge AI solutions. It processes https://www.tensorflow.org/guide/keras[tensorflow.keras] neural networks and translates them into a dedicated co-processor unit which is suitable for integration with embedded processing systems. The generated outputs are platform independent and consist entirely of synthesizable and technology-agnostic Verilog HDL code. The co-processor is wrapped within an AHB-lite interface to allow easy integration into custom processor systems. Figure 1 shows the simplified overview of tinyHLS.
+https://github.com/Fraunhofer-IMS/tinyHLS[*tinyHLS*] is a compact hardware compiler developed by Fraunhofer IMS, which is an useful toolbox for embedded systems engineers and data scientists responsible for developing and deploying edge AI solutions. It processes https://www.tensorflow.org/guide/keras[tensorflow.keras] neural networks and translates them into a dedicated co-processor unit which is suitable for integration with embedded processing systems. The generated outputs are platform independent and consist entirely of synthesizable and technology-agnostic Verilog HDL code. The co-processor is wrapped within an AHB-lite interface to allow easy integration into custom processor systems. Figure 1 shows the simplified overview of tinyHLS.
 
 :imagesdir: ../figures
 image:tinyHLS_overview.png[pdfwidth=6.25in,align=center]
