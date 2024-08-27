@@ -35,8 +35,7 @@ def task_DeployToGitHubPages():
     cwd = str(ROOT / "public")
     commands = [
         "git init",
-#        "cp ../.git/config ./.git/config",
-        "git remote add origin https://github.com/Fraunhofer-IMS/tinyHLS.git",
+        "cp ../.git/config ./.git/config",
         "touch .nojekyll",
         "git add .",
         'git config --local user.email "push@gha"',
