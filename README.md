@@ -29,6 +29,8 @@ The conv1D layer is configurable either as a resource-efficient or as performanc
 > Contributions and feedback are highly welcome!
 
 ## Quickstart 
+Detailed documentation is available as [HTML](https://fraunhofer-ims.github.io/tinyHLS/) and [PDF](https://github.com/Fraunhofer-IMS/tinyHLS/blob/main/docs/public/pdf/tinyHLS.pdf). 
+
 
 ### Conda Installation
 
