@@ -16,10 +16,4 @@ https://github.com/Fraunhofer-IMS/tinyHLS[image:https://img.shields.io/github/ac
 https://github.com/Fraunhofer-IMS/tinyHLS/blob/main/LICENSE[image:https://img.shields.io/github/license/Fraunhofer-IMS/tinyHLS?longCache=true&style=flat-square[title='license']]
 https://github.com/Fraunhofer-IMS/tinyHLS/blob/main/docs/public/pdf/tinyHLS.pdf[image:https://img.shields.io/badge/user%20guide-PDF-ffbd00?longCache=true&style=flat-square&logo=asciidoctor[title='userguide (pdf)']]
 https://github.com/Fraunhofer-IMS/tinyHLS/tree/main/docs/ug[image:https://img.shields.io/badge/-HTML-ffbd00?longCache=true&style=flat-square[title='userguide (html)']]
-
-////
-https://github.com/Fraunhofer-IMS/tinyHLS/releases[image:https://img.shields.io/github/v/release/stnolting/neorv32?longCache=true&style=flat-square&logo=GitHub[title='release']]
-https://github.com/Fraunhofer-IMS/tinyHLS/releases[image:https://img.shields.io/github/commits-since/stnolting/neorv32/latest?longCache=true&style=flat-square&logo=GitHub[title='release-commits']]
-////
-
 include::content.adoc[]
