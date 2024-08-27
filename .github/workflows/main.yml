@@ -109,4 +109,6 @@ jobs:
         run: pip install doit
 
       - name: '🚀 Deploy to GitHub-Pages'
-        run: ./docs/do.py DeployToGitHubPages "update ${{ github.sha }}"-
+        run: |
+          chmod +x ./docs/do.py
+          ./docs/do.py DeployToGitHubPages "update ${{ github.sha }}"-
