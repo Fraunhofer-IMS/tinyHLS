@@ -96,6 +96,11 @@ jobs:
         run: |
           cd docs 
           make html
+      
+      - name: 'List generated files'
+        run: |
+          echo "Listing contents of docs/public:"
+          ls -R docs/public
           
       - name: 'Upload Documentation Artifacts'
         uses: actions/upload-artifact@v3
