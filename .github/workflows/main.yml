@@ -104,3 +104,9 @@ jobs:
           path: |
             docs/public/pdf/tinyHLS.pdf
             docs/public/index.html
+            
+    - name: '🐍 Install doit'
+      run: pip install doit
+
+    - name: '🚀 Deploy to GitHub-Pages'
+      run: ./docs/do.py DeployToGitHubPages "update ${{ github.sha }}"-
