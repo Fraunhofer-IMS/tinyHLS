@@ -35,6 +35,7 @@ def task_DeployToGitHubPages():
     cwd = str(ROOT / "public")
     commands = [
         "git init",
+        "ls", 
         "cp .git/config ./docs/.git/config",
         "touch .nojekyll",
         "git add .",
