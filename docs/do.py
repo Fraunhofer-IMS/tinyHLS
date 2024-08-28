@@ -33,18 +33,18 @@ def task_Documentation():
 
 def task_DeployToGitHubPages():
     cwd = str(ROOT)  # Use ROOT directly
-#    posargs = "update " + (sys_argv[2] if len(sys_argv) > 2 else "")
+    posargs = "update " + (sys_argv[2] if len(sys_argv) > 2 else "")
     commands = [
         "ls -a", 
         "git init",
         "ls -a", 
         "cp ../.git/config ./.git/config",
         "touch .nojekyll",
-        "sed -i 's#../figures/#./figures/#g' index.html",  # Replace references in index.html
+        "sed -i 's#../figures/#./figures/#g' index.html",
         "git add .",
         'git config --local user.email "push@gha"',
         'git config --local user.name "GHA"',
-        f"git commit -am '{posargs}'",  # Use formatted posargs directly
+        f"git commit -am '{posargs}'",
         "git push -u origin +HEAD:gh-pages"
     ]
     for command in commands:
