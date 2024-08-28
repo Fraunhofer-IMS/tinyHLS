@@ -7,7 +7,6 @@ from os import environ
 from pathlib import Path
 import subprocess
 
-from doit.action import CmdAction
 from doit.cmd_base import ModuleTaskLoader
 from doit.doit_cmd import DoitMain
 
@@ -21,7 +20,8 @@ def run_command(command, cwd=None):
     result = subprocess.run(command, shell=True, cwd=cwd, text=True, capture_output=True)
     print(f"stdout: {result.stdout}")
     print(f"stderr: {result.stderr}")
-    result.check_returncode()
+    if result.returncode != 0:
+        raise subprocess.CalledProcessError(result.returncode, command)
 
 def task_Documentation():
     return {
@@ -47,18 +47,16 @@ def task_DeployToGitHubPages():
         f"git commit -am '{posargs}'",
         "git push -u origin +HEAD:gh-pages"
     ]
-    for command in commands:
-        run_command(command, cwd=cwd)
 
-#    return {
-#        "actions": [
-#            CmdAction(lambda: run_command(command, cwd=cwd))
-#            for command in commands
-#        ],
-#        "doc": "Create a clean branch in subdir 'docs' and push to branch 'gh-pages'",
-#        "pos_arg": "posargs",
-#    }
-
+    def run_all_commands():
+        for command in commands:
+            run_command(command, cwd=cwd)
+    
+    return {
+        "actions": [run_all_commands],
+        "doc": "Create a clean branch in subdir 'docs' and push to branch 'gh-pages'",
+        "pos_arg": "posargs",
+    }
 
 if __name__ == "__main__":
     sys_exit(DoitMain(ModuleTaskLoader(globals())).run(sys_argv[1:]))
