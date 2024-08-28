@@ -45,7 +45,7 @@ def task_DeployToGitHubPages():
         'git config --local user.email "push@gha"',
         'git config --local user.name "GHA"',
         f"git commit -am '{posargs}'",  # Use formatted posargs directly
-        "git push -u origin +HEAD:gh-pages",
+        "git push -u origin +HEAD:gh-pages"
     ]
     for command in commands:
         run_command(command, cwd=cwd)
