@@ -38,7 +38,7 @@ def task_DeployToGitHubPages():
         "cd ..",
         "git init",
         "ls -a", 
-        "cp ../../.git/config ./.git/config",
+        "cp ../.git/config ./.git/config",
         "touch .nojekyll",
         "git add .",
         'git config --local user.email "push@gha"',
