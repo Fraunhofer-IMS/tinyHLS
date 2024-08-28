@@ -5,9 +5,9 @@ include::../attrs.main.adoc[]
 
 <<<
 // ####################################################################################################################
-.**Documentation**
+.**Repository to this documentation**
 [TIP]
-The online documentation of the project (a.k.a. the **user guide**) is available on GitHub-pages: https://github.com/Fraunhofer-IMS/tinyHLS 
+The repository with the source code to this documentation can be found on GitHub: https://github.com/Fraunhofer-IMS/tinyHLS 
 
 <<<
 // ####################################################################################################################

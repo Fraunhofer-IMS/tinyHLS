@@ -57,7 +57,7 @@ http://conda.io/projects/conda/en/latest/user-guide/tasks/manage-python.html[man
 
 *Step 3*: Clone the tinyHLS repository
 
-Clone the https://github.com/Fraunhofer-IMS/tinyHLS[tinyHLS] im Github auf your computer or server
+Clone the https://github.com/Fraunhofer-IMS/tinyHLS[tinyHLS] im Github on your computer or server.
 
 *Step 4*: Create the Virtual Environment tinyHLS
 
