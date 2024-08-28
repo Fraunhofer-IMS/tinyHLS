@@ -34,9 +34,10 @@ def task_Documentation():
 def task_DeployToGitHubPages():
     cwd = str(ROOT / "public")
     commands = [
+        "cd docs/"
         "git init",
-        "ls", 
-        "cp .git/config ./docs/.git/config",
+        "ls -a", 
+        "cp ../.git/config ./.git/config",
         "touch .nojekyll",
         "git add .",
         'git config --local user.email "push@gha"',
