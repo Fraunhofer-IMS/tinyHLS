@@ -35,7 +35,7 @@ def task_DeployToGitHubPages():
     cwd = str(ROOT)  # Use ROOT directly
     posargs = "update " + (sys_argv[2] if len(sys_argv) > 2 else "")
     commands = [
-        "ls -a docs",  # List contents of docs directory
+        "ls -a", 
         "git init",
         "ls -a", 
         "cp ../.git/config ./.git/config",
