@@ -32,18 +32,20 @@ def task_Documentation():
     }
 
 def task_DeployToGitHubPages():
-    cwd = str(ROOT)
+    cwd = str(ROOT)  # Use ROOT directly
+    posargs = "update " + (sys_argv[2] if len(sys_argv) > 2 else "")
     commands = [
-        "ls -a", 
+        "ls -a docs",  # List contents of docs directory
+        "cd docs",
         "git init",
         "ls -a", 
         "cp ../.git/config ./.git/config",
         "touch .nojekyll",
-        "sed -i 's#../figures/#./figures/#g' index.html",
+        "sed -i 's#../figures/#./figures/#g' index.html",  # Replace references in index.html
         "git add .",
         'git config --local user.email "push@gha"',
         'git config --local user.name "GHA"',
-        "git commit -am '{posargs}'",
+        f"git commit -am '{posargs}'",  # Use formatted posargs directly
         "git push -u origin +HEAD:gh-pages",
     ]
     for command in commands:
@@ -54,7 +56,7 @@ def task_DeployToGitHubPages():
             CmdAction(lambda: run_command(command, cwd=cwd))
             for command in commands
         ],
-        "doc": "Create a clean branch in subdir 'public' and push to branch 'gh-pages'",
+        "doc": "Create a clean branch in subdir 'docs' and push to branch 'gh-pages'",
         "pos_arg": "posargs",
     }
 
