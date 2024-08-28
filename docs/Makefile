@@ -21,7 +21,7 @@ html:
 	[ -f revnumber.txt ] && REVNUMBER='-a revnumber='"$$(cat revnumber.txt)" || unset REVNUMBER; \
 	asciidoctor $$REVNUMBER \
 	  ug/main.adoc \
-	  --out-file public/index.html
+	  --out-file index.html
 
 # Generate DOXYGEN software documentation
 # This will be part of a later version 
