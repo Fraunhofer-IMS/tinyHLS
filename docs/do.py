@@ -32,7 +32,7 @@ def task_Documentation():
     }
 
 def task_DeployToGitHubPages():
-    cwd = str(ROOT / "docs")
+    cwd = str(ROOT)
     commands = [
         "ls -a", 
         "git init",
