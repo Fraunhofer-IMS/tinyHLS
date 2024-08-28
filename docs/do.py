@@ -39,6 +39,7 @@ def task_DeployToGitHubPages():
         "ls -a", 
         "cp ../.git/config ./.git/config",
         "touch .nojekyll",
+        "sed -i 's#../figures/#./figures/#g' index.html",
         "git add .",
         'git config --local user.email "push@gha"',
         'git config --local user.name "GHA"',
