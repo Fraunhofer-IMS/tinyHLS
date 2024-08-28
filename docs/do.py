@@ -33,7 +33,7 @@ def task_Documentation():
 
 def task_DeployToGitHubPages():
     cwd = str(ROOT)  # Use ROOT directly
-    posargs = "update " + (sys_argv[2] if len(sys_argv) > 2 else "")
+#    posargs = "update " + (sys_argv[2] if len(sys_argv) > 2 else "")
     commands = [
         "ls -a", 
         "git init",
@@ -50,14 +50,14 @@ def task_DeployToGitHubPages():
     for command in commands:
         run_command(command, cwd=cwd)
 
-    return {
-        "actions": [
-            CmdAction(lambda: run_command(command, cwd=cwd))
-            for command in commands
-        ],
-        "doc": "Create a clean branch in subdir 'docs' and push to branch 'gh-pages'",
-        "pos_arg": "posargs",
-    }
+#    return {
+#        "actions": [
+#            CmdAction(lambda: run_command(command, cwd=cwd))
+#            for command in commands
+#        ],
+#        "doc": "Create a clean branch in subdir 'docs' and push to branch 'gh-pages'",
+#        "pos_arg": "posargs",
+#    }
 
 
 if __name__ == "__main__":
