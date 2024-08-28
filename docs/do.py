@@ -34,6 +34,7 @@ def task_Documentation():
 def task_DeployToGitHubPages():
     cwd = str(ROOT / "public")
     commands = [
+        "ls -a", 
         "cd docs/",
         "git init",
         "ls -a", 
