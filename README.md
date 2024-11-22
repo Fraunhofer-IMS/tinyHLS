@@ -29,8 +29,6 @@ The conv1D layer is configurable either as a resource-efficient or as performanc
 > Contributions and feedback are highly welcome!
 
 ## Quickstart 
-Detailed documentation is available as [HTML](https://fraunhofer-ims.github.io/tinyHLS/) and [PDF](https://github.com/Fraunhofer-IMS/tinyHLS/blob/main/docs/public/pdf/tinyHLS.pdf). 
-
 
 ### Conda Installation
 
@@ -40,7 +38,6 @@ To setup the environment and activate it, the following commands have to be run 
 ```
 $ conda env create -f environment.yml
 $ conda activate tinyHLS
-$ pip install
 ```
 
 
@@ -63,13 +60,15 @@ tinyhls.translate_model()
 tinyhls.create_testbench()
 ```
 
-### Example
+### Examples
 
 An example of a small CNN is provided in the [`test.py`](test.py) file.
 This example is also executed by the project's [GitHub actions workflow](https://github.com/Fraunhofer-IMS/tinyHLS/actions).
 
 > [!TIP]
 > See the action's artifacts for tool logs and the generated HDL example.
+
+Further examples are provided under [examples/](https://github.com/Fraunhofer-IMS/tinyHLS/examples), which include the application on PPG and ECG biosignals using public datasets as well as a workaround to use this tool in combination with PyTorch. More details are provided in the userguide. 
 
 ### Simulation
 
@@ -94,7 +93,7 @@ modified version thereof. Alternatively, if you modify or re-
 distribute the hardware compiler itself, you may (at your option) 
 remove this special exception, which will cause the hardware compi-
 ler and the resulting output files to be licensed under the GNU 
-General Public License without this special exception.
+General Public License Version 3 without this special exception.
 
 ```
 
