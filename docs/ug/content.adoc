@@ -66,7 +66,6 @@ Clone the https://github.com/Fraunhofer-IMS/tinyHLS[tinyHLS] im Github on your c
 *Step 5*: Activate the virtual environment 
  
  $ conda activate tinyHLS
- $ pip install 
 
 
 === Use
@@ -184,8 +183,9 @@ About arguments:
  
 
 
-=== Test Example
+=== Examples 
 
+*Simple Test example*: 
 An example of a small convolutional neural network (CNN) is provided for test in the https://github.com/Fraunhofer-IMS/tinyHLS/test.py[test.py] file. It consists of nine cells that effectively showcase the capabilities of tinyHLS.
 
 . Import the necessary packages.
@@ -208,6 +208,17 @@ An example of a small convolutional neural network (CNN) is provided for test in
 
 . Generate the testbench for the convolutional neural network (CNN) model with ``tinyhls.create_testbench()``.
 
+*Biosignal (ECG) Example*: 
+To provide insights into how this can be used in a realistic application an open-source example is provided in the https://github.com/Fraunhofer-IMS/tinyHLS/examples/ecg_example.py[ecg_example.py] file. Please make sure that you tinyHLS conda environment is activated. Then simply execute ``python ecg_example.py`` in the ``examples`` folder.
+
+*PyTorch (PPG) Example*: 
+Though we recommend the use of TensorFlow Keras and depreciate the use of PyTorch, a PyTorch example was included in the https://github.com/Fraunhofer-IMS/tinyHLS/examples/ppg_example.py[ppg_example.py] file. Since other packages are required, it is neccessary to create a new environment using 
+
+ $ cd examples/
+ $ conda env create -f environment_torch.yml
+ $ conda activate tinyHLS_torch
+
+As usual, the example can then be executed with ``python ppg_example.py``. Please note that the wrapper function ``convert_model_to_json()`` simply exchanges the layer names from PyTorch to the TensorFlow Keras naming scheme. Hence, it is considered experimental and not part of tinyHLS yet. 
 
 === Requirements
 

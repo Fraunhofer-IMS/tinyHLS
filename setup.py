@@ -39,7 +39,7 @@
 
 from setuptools import setup, find_packages
 
-VERSION = '0.0.1' 
+VERSION = '1.0.1' 
 DESCRIPTION = 'Hardware Compiler for tensorflow'
 LONG_DESCRIPTION = 'Template based hardware compiler for tensorrflow, for creating efficient hardeware accelerators easily'
 
@@ -47,8 +47,8 @@ LONG_DESCRIPTION = 'Template based hardware compiler for tensorrflow, for creati
 setup(
         name="tinyhls", 
         version=VERSION,
-        author="Ankur Deshmukh",
-        author_email="<ankur.ajay.deshmukh@ims.fraunhofer.com>",
+        author="Ingo Hoyer",
+        author_email="<tinyHLS@ims.fraunhofer.com>",
         description=DESCRIPTION,
         long_description=LONG_DESCRIPTION,
         packages=find_packages(),
