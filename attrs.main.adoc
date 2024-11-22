@@ -1,0 +1,4 @@
+:icons: font
+:imagesdir: ../figures
+:toc: macro
+:title-logo-image: image:tinyHLS.png[pdfwidth=6.25in,align=center]
