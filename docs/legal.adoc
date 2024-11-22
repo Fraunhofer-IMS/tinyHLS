@@ -39,5 +39,5 @@ modified version thereof. Alternatively, if you modify or re-
 distribute the hardware compiler itself, you may (at your option) 
 remove this special exception, which will cause the hardware compi-
 ler and the resulting output files to be licensed under the GNU 
-General Public License without this special exception.
+General Public License Version 3 without this special exception.
 ----
