@@ -2,7 +2,7 @@
 [![Fraunhofer_IMS](https://img.shields.io/badge/Fraunhofer-IMS-179c7d.svg?longCache=true&style=flat-square&logo=fraunhofergesellschaft&logoColor=179c7d)](https://www.ims.fraunhofer.de/en.html)
 [![tinyHLS-sim](https://img.shields.io/github/actions/workflow/status/Fraunhofer-IMS/tinyHLS/main.yml?branch=main&longCache=true&style=flat-square&label=tinyHLS-check&logo=Github%20Actions&logoColor=fff)](https://github.com/Fraunhofer-IMS/tinyHLS/actions/workflows/main.yml)
 [![license](https://img.shields.io/github/license/Fraunhofer-IMS/tinyHLS?longCache=true&style=flat-square)](LICENSE)
-[![DOI](https://zenodo.org/badge/13785840.svg)](https://zenodo.org/badge/latestdoi/13785840)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13785841.svg)](https://doi.org/10.5281/zenodo.13785841)
 
 
 # TinyHLS
