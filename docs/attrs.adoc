@@ -1,6 +1,6 @@
 :keywords: ai, hls, tensorflow, verilog, asic, fpga, asip
 :description: Template-based, layer-oriented high level synthesis
-:revnumber: v1.0.1
+:revnumber: v1.0.2
 :doctype: book
 :sectnums:
 :stem:
