@@ -1,0 +1,19 @@
+= The tinyHLS user guide
+include::../attrs.adoc[]
+:title: [Datasheet] tinyHLS: template-based, layer-oriented High Level synthesis
+:icons: font
+:imagesdir: img
+:toc: left
+:title-logo-image: tinyHLS.png[pdfwidth=6.25in,align=center]
+:favicon: img/icon.png
+
+image:tinyHLS.png[align=center,link="https://github.com/Fraunhofer-IMS/tinyHLS"]
+
+
+[.text-center]
+https://www.ims.fraunhofer.de/en.html[image:https://img.shields.io/badge/Fraunhofer-IMS-179c7d.svg?longCache=true&style=flat-square&logo=fraunhofergesellschaft&logoColor=179c7d[title='homepage']]
+https://github.com/Fraunhofer-IMS/tinyHLS[image:https://img.shields.io/github/actions/workflow/status/Fraunhofer-IMS/tinyHLS/main.yml?branch=main&longCache=true&style=flat-square&label=tinyHLS-check&logo=Github%20Actions&logoColor=fff[title='repo']]
+https://github.com/Fraunhofer-IMS/tinyHLS/blob/main/LICENSE[image:https://img.shields.io/github/license/Fraunhofer-IMS/tinyHLS?longCache=true&style=flat-square[title='license']]
+https://github.com/Fraunhofer-IMS/tinyHLS/blob/main/docs/public/pdf/tinyHLS.pdf[image:https://img.shields.io/badge/user%20guide-PDF-ffbd00?longCache=true&style=flat-square&logo=asciidoctor[title='userguide (pdf)']]
+https://github.com/Fraunhofer-IMS/tinyHLS/tree/main/docs/ug[image:https://img.shields.io/badge/-HTML-ffbd00?longCache=true&style=flat-square[title='userguide (html)']]
+include::content.adoc[]
