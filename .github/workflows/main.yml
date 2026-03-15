@@ -110,6 +110,7 @@ jobs:
 
       - name: '🚀 Deploy to GitHub-Pages'
         run: |
+          cd docs
           ls -a
           git init
           ls -a
