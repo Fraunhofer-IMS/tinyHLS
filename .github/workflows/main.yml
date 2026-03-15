@@ -107,10 +107,21 @@ jobs:
             docs/public/pdf/tinyHLS.pdf
             docs/public/index.html
             
-      - name: '🐍 Install doit'
-        run: pip install doit
+#      - name: '🐍 Install doit'
+#        run: pip install doit
 
       - name: '🚀 Deploy to GitHub-Pages'
         run: |
-          chmod +x ./docs/do.py
-          ./docs/do.py DeployToGitHubPages "update ${{ github.sha }}"
+#          chmod +x ./docs/do.py
+#          ./docs/do.py DeployToGitHubPages "update ${{ github.sha }}"
+        ls -a
+        git init
+        ls -a
+        cp ../.git/config ./.git/config
+        touch .nojekyll
+        sed -i 's#../figures/#./figures/#g' index.html
+        git add .
+        git config --local user.email "push@gha"
+        git config --local user.name "GHA"
+        git commit -am "update ${{ github.sha }}"
+        git push -u origin +HEAD:gh-pages
