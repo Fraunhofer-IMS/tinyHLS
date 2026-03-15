@@ -121,4 +121,4 @@ jobs:
           git config --local user.email "push@gha"
           git config --local user.name "GHA"
           git commit -am "update ${{ github.sha }}"
-          git push -u origin +HEAD:gh-pages
+          git push -u origin +HEAD:gh-pages --force
