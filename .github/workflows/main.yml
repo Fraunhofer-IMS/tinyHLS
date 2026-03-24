@@ -114,9 +114,9 @@ jobs:
         run: |
           cd docs
           git init
-          git remote add origin "https://x-acess-token${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+          git remote add origin "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
           touch .nojekyll
-          sed -i 's#../figures/#.figures/#g' index.html
+          sed -i 's#../figures/#./figures/#g' index.html
           git add . 
           git config --local user.email "push@gha"
           git config --local user.name "GHA"
