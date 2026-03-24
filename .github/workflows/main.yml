@@ -61,7 +61,7 @@ jobs:
 
 
       - name: '📤 Archive Outputs'
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: outputs
           path: output/*
@@ -100,7 +100,7 @@ jobs:
           ls -R docs/public
           
       - name: 'Upload Documentation Artifacts'
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with: 
           name: documentation
           path: |
