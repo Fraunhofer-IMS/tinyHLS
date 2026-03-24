@@ -1,5 +1,8 @@
 name: 'tinyHLS-test-sim'
 
+permissions: 
+  contents: write
+
 on:
   push:
     branches:
@@ -107,18 +110,16 @@ jobs:
             docs/public/pdf/tinyHLS.pdf
             docs/public/index.html
            
-
-      - name: '🚀 Deploy to GitHub-Pages'
+      - name: 'Deploy to GitHub-Pages'
         run: |
           cd docs
-          ls -a
           git init
-          ls -a
-          cp ../.git/config ./.git/config
+          git remote add origin "https://x-acess-token${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
           touch .nojekyll
-          sed -i 's#../figures/#./figures/#g' index.html
-          git add .
+          sed -i 's#../figures/#.figures/#g' index.html
+          git add . 
           git config --local user.email "push@gha"
           git config --local user.name "GHA"
-          git commit -am "update ${{ github.sha }}"
+          git commit -m "update ${GITHUB_SHA}" || echo "Nothing to commit"
           git push -u origin +HEAD:gh-pages --force
+
